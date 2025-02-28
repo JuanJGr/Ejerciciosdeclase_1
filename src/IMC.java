@@ -29,9 +29,9 @@ public class IMC {
         } else if (imc >= 35 && imc <= 39.9) {
             System.out.println("Obesidad tipo II");
         } else if (imc >= 40 && imc <= 49.9) {
-            System.out.println("Obseidad tipo III (mórbida)");
+            System.out.println("Obesidad tipo III (mórbida)");
         } else {
-                System.out.println("Obseidad de Tipo IV (extrema)");
+                System.out.println("Obesidad de Tipo IV (extrema)");
         }
     }
 }
