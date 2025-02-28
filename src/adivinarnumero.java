@@ -18,7 +18,7 @@ public class adivinarnumero {
         int intentos = 3;
 
         for (int i = 1; i <= intentos; i++) {
-            System.out.println("Intento: " + i + "" +  "Ingrese un número");
+            System.out.println("Intento: " + i + " " +  "Ingrese un número");
             int int_us = scanner.nextInt();
 
             if (int_us == num_alea) {
