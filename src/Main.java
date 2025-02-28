@@ -32,7 +32,7 @@ public class Main {
             }
             else
             {
-                System.out.println("el ganador es: dado 2");
+                System.out.println("El ganador es: dado 2");
             }
         }
     }
