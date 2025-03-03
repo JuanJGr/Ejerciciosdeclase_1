@@ -16,35 +16,34 @@ public class calculadora {
             int num1 = ale.nextInt((max - min + 1)) + min;
             int num2 = ale.nextInt((max - min + 1)) + min;
 
-
             System.out.println("Operación: + (Suma), - (Resta), * (Multiplicación), / (División), ^ (Exponente), % (Módulo)");
 
             System.out.print("Ingresa un signo aritmético: ");
-            char operacion = scanner.nextLine().charAt(0);
+            String operacion = scanner.nextLine();
             System.out.println("Los números aleatorios generados son: " + num1 + " y " + num2);
 
             double resultado = 0;
 
-            if (operacion == '+') {
+            if (operacion.equals("+")) {
                 resultado = num1 + num2;
                 System.out.println("Resultado de la suma: " + resultado);
-            } else if (operacion == '-') {
+            } else if (operacion.equals("-")) {
                 resultado = num1 - num2;
                 System.out.println("Resultado de la resta: " + resultado);
-            } else if (operacion == '*') {
+            } else if (operacion.equals("*")) {
                 resultado = num1 * num2;
                 System.out.println("Resultado de la multiplicación: " + resultado);
-            } else if (operacion == '/') {
+            } else if (operacion.equals("/")) {
                 if (num2 != 0) {
                     resultado = (double) num1 / num2;
                     System.out.println("Resultado de la división: " + resultado);
                 } else {
                     System.out.println("No se puede dividir por cero.");
                 }
-            } else if (operacion == '^') {
+            } else if (operacion.equals("^")) {
                 resultado = calcularPotencia(num1, num2);
                 System.out.println("Resultado de la potencia: " + resultado);
-            } else if (operacion == '%') {
+            } else if (operacion.equals("%")) {
                 resultado = num1 % num2;
                 System.out.println("Resultado del módulo: " + resultado);
             } else {
@@ -60,7 +59,6 @@ public class calculadora {
         }
 
         System.out.println("¡Gracias por usar la calculadora!");
-
     }
 
     public static double calcularPotencia(int base, int exponente) {
